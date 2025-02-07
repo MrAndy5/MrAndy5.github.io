@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia del Atlético de Madrid</title>
+    <link rel="stylesheet" href="styleindex.css">
+</head>
+<body>
+    <div class="nav">
+        <button onclick="location.href='#inicio'">Inicio</button>
+        <button onclick="location.href='#historia'">Historia</button>
+        <button onclick="location.href='#plantilla'">Plantilla</button>
+        <button onclick="location.href='#actualidad'">Actualidad</button>
+    </div>
+    <div class="title-container">
+        <h1>Historia del Atlético de Madrid</h1>
+    </div>
+    
+    <div class="section-buttons">
+        <button onclick="location.href='#estadio'">Estadio</button>
+        <button onclick="location.href='#equipacion'">Equipación</button>
+        <button onclick="location.href='#actualidad'">Actualidad</button>
+        <button onclick="location.href='#newsletter'">Newsletter</button>
+    </div>
+    
+    <div id="estadio" class="section">
+        <h2>Estadio</h2>
+        <img src="images/estadio.png" alt="Estadio Riyadh Metropolitano">
+        <p>El Riyadh Metropolitano es el hogar del Atlético de Madrid, un estadio moderno con una capacidad impresionante.</p>
+    </div>
+    
+    <div id="equipacion" class="section">
+        <h2>Equipación</h2>
+        <img src="images/primera.png" alt="Primera equipación">
+        <img src="images/segunda.png" alt="Segunda equipación">
+    </div>
+    
+    <div id="actualidad" class="section">
+        <h2>Actualidad</h2>
+        <h3>Triunfo ante Getafe</h3>
+        <img src="images/getafe.png" alt="Victoria contra Getafe">
+        <p>El Atlético de Madrid se impuso al Getafe con un contundente 5-0 en su último encuentro.</p>
+        
+        <h3>Derbi contra el Real Madrid</h3>
+        <img src="images/madrid.png" alt="Derbi contra el Real Madrid">
+        <p>El próximo sábado, el Atlético de Madrid se enfrentará al Real Madrid en un emocionante derbi.</p>
+    </div>
+    
+    <div id="newsletter" class="section">
+        <h2>Newsletter</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+            
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required><br><br>
+            
+            <label for="frecuencia">Frecuencia del boletín:</label>
+            <select id="frecuencia" name="frecuencia">
+                <option value="semanal">Semanal</option>
+                <option value="mensual">Mensual</option>
+            </select><br><br>
+            
+            <button type="submit">Apuntarse</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </div>
+    
+</body>
+</html>
