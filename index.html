@@ -8,20 +8,22 @@
 </head>
 <body>
     <div class="nav">
-        <button onclick="location.href='#inicio'">Inicio</button>
-        <button onclick="location.href='#historia'">Historia</button>
+        <div class="dropdown">
+            <button class="dropbtn">Inicio</button>
+            <div class="dropdown-content">
+                <a href="#inicio">Inicio</a>
+                <a href="#actualidad">Actualidad</a>
+                <a href="#estadio">Estadio</a>
+                <a href="#newsletter">Newsletter</a>
+            </div>
+        </div>
+        <button onclick="location.href='story.html'">Historia</button>
         <button onclick="location.href='#plantilla'">Plantilla</button>
-        <button onclick="location.href='#actualidad'">Actualidad</button>
+        <button onclick="location.href='#aficion'">Afición</button>
     </div>
     <div class="title-container">
         <h1>Historia del Atlético de Madrid</h1>
-    </div>
-    
-    <div class="section-buttons">
-        <button onclick="location.href='#estadio'">Estadio</button>
-        <button onclick="location.href='#equipacion'">Equipación</button>
-        <button onclick="location.href='#actualidad'">Actualidad</button>
-        <button onclick="location.href='#newsletter'">Newsletter</button>
+        <h2>La lealtad es algo que sale del alma</h2>
     </div>
     
     <div id="estadio" class="section">
@@ -76,6 +78,9 @@
             <button type="reset">Borrar</button>
         </form>
     </div>
+    <footer>
+        <p>© 2025 Andrés Sánchez de Ágreda 3ºA GITT</p>
     
 </body>
+
 </html>
