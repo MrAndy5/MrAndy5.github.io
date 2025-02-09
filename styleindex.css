@@ -172,3 +172,36 @@ button[type='submit'], button[type='reset'] {
 button[type='submit']:hover, button[type='reset']:hover {
     background-color: #990000;
 }
+
+.league-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.league-table th, .league-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.league-table th {
+    background-color: #CC0000;
+    color: white;
+    font-size: 18px;
+}
+
+.league-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.league-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.league-table td {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
