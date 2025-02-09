@@ -140,3 +140,10 @@ img {
     display: block;
     filter: invert(1);
 }
+
+footer {
+    background-color: #CC0000;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
