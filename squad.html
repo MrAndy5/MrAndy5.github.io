@@ -202,7 +202,6 @@
     </footer>
 
     <script>
-        // JavaScript for sliding functionality
         const containers = document.querySelectorAll('.player-container');
 
         containers.forEach(container => {
@@ -227,7 +226,7 @@
                 if (!isDragging) return;
                 e.preventDefault();
                 const x = e.pageX - container.offsetLeft;
-                const walk = (x - startX) * 2; // Adjust scroll speed
+                const walk = (x - startX) * 2; 
                 container.scrollLeft = scrollLeft - walk;
             });
         });
