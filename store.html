@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda del Atlético de Madrid</title>
-    <link rel="stylesheet" href="stylestore.css">
-    <script defer src="store.js"></script>
+    <title>Historia del Atlético de Madrid</title>
+    <link rel="stylesheet" href="styleindex.css">
 </head>
 <body>
     <div class="nav">
         <div class="dropdown">
             <button class="dropbtn">Inicio</button>
             <div class="dropdown-content">
-                <a href="#inicio">Inicio</a>
-                <a href="#actualidad">Actualidad</a>
-                <a href="#clasificacion">Clasificación</a>
-                <a href="#estadio">Estadio</a>
-                <a href="#newsletter">Newsletter</a>
+                <a href="index.html#inicio">Inicio</a>
+                <a href="index.html#actualidad">Actualidad</a>
+                <a href="index.html#clasificacion">Clasificación</a>
+                <a href="index.html#estadio">Estadio</a>
+                <a href="index.html#newsletter">Newsletter</a>
             </div>
         </div>
         <div class="dropdown">
@@ -54,19 +53,30 @@
                 <a href="stats.html#actual">Temporada Actual</a>
                 <a href="stats.html#anterior">Anteriores</a>
             </div>
+        </div>
         <div class="dropdown">
             <button class="dropbtn">Tienda</button>
             <div class="dropdown-content">
-                <a href="#Articulos">Artículos relacionados</a>
+                <a href="#tienda">Articulos relacionados</a>
             </div>
+
         </div>
     </div>
+    <div class="title-container">
+        <h1>Tienda</h1>
+        <h2>Productos de Sponsor</h2>
+    </div>
+
+    <div id="tienda" class="section">
+        
+    </div>
+
+    <script src="store.js"></script>
+
+    <footer>
+        <p>© 2025 Andrés Sánchez de Ágreda 3ºA GITT</p>
+    </footer>
     
-    <main class="store">
-        <h1>Tienda Oficial</h1>
-        <label for="price-filter">Filtrar por precio:</label>
-        <input type="number" id="price-filter" placeholder="Máximo precio" min="0"/>
-        <div id="product-list" class="products"></div>
-    </main>
 </body>
+
 </html>
