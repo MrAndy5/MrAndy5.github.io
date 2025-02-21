@@ -18,6 +18,7 @@ function anuncioIzq() {
 
 function anuncioDer() {
     fetch("https://dummyjson.com/products/"+randomnumber()) //URL de la llamada
+    .then(response => response.json())
     .then(data => {
         document.getElementById("thumbnailR").src = data.thumbnail;
         document.getElementById("titleR").textContent = data.title;

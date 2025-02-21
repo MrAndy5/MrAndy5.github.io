@@ -4,30 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia del Atlético de Madrid</title>
-    <link rel="stylesheet" href="styleindex.css">
+    <link rel="stylesheet" href="stylestats.css">
 </head>
 <body>
-    <!-- Navigation and other sections -->
+    <div class="nav">
+        <div class="dropdown">
+            <button class="dropbtn">Inicio</button>
+            <div class="dropdown-content">
+                <a href="index.html#inicio">Inicio</a>
+                <a href="index.html#actualidad">Actualidad</a>
+                <a href="index.html#clasificacion">Clasificación</a>
+                <a href="index.html#estadio">Estadio</a>
+                <a href="index.html#newsletter">Newsletter</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Historia</button>
+            <div class="dropdown-content">
+                <a href="story.html#inicios">1. Los Inicios (1903 - 1939)</a>
+                <a href="story.html#aviacion">2. Atlético Aviación (1939 - 1950)</a>
+                <a href="story.html#años-dorados">3. Años Dorados (1950 - 1970)</a>
+                <a href="story.html#campeones-europa">4. Campeones de Europa (1970 - 1990)</a>
+                <a href="story.html#doblete">5. Del Doblete al Descenso (1990 - 2000)</a>
+                <a href="story.html#resurreccion">6. Resurrección y Títulos Europeos (2000 - 2010)</a>
+                <a href="story.html#era-simeone">7. La Era Simeone (2010 - Hoy)</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Plantilla</button>
+            <div class="dropdown-content">
+                <a href="squad.html#porteros">Porteros</a>
+                <a href="squad.html#defensores">Defensores</a>
+                <a href="squad.html#centrocampistas">Centrocampistas</a>
+                <a href="squad.html#delanteros">Delanteros</a>
+                <a href="squad.html#cuerpo-tecnico">Cuerpo Técnico</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Afición</button>
+            <div class="dropdown-content">
+                <a href="fans.html#himnos">Himnos</a>
+                <a href="fans.html#social">Social</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Estadísticas</button>
+            <div class="dropdown-content">
+                <a href="#Actual">Temporada Actual</a>
+                <a href="#2021">Anteriores</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Tienda</button>
+            <div class="dropdown-content">
+                <a href="store.html">Articulos relacionados</a>
+            </div>
 
-    <div id="stats" class="section">
-        <h2>Estadísticas de la Temporada 2024/2025</h2>
-        <h3>Detalles del Equipo</h3>
-        <p><strong>Nombre:</strong> <span id="team-name">Cargando...</span></p>
-        <p><strong>Fundado:</strong> <span id="team-founded">Cargando...</span></p>
-        <p><strong>Estadio:</strong> <span id="team-venue">Cargando...</span></p>
-        <p><strong>Sitio Web:</strong> <a id="team-website" href="#">Cargando...</a></p>
+        </div>
+    </div>
+    <div class="title-container">
+        <h1>Historia del Atlético de Madrid</h1>
+        <h2>La lealtad es algo que sale del alma</h2>
+    </div>
 
-        <h3>Partidos Jugados</h3>
-        <ul id="matches-list">
-            <!-- Matches will be dynamically added here -->
-        </ul>
+    <div class="ad-container ad-left" id="ad-left">
+        <img src="" alt="Anuncio" id="thumbnailL">
+        <a id="CargandoL">Cargando anuncio...</a>
+        <p id="titleL">Cargando título</p>
+        <a id="linkL" href="purchase.html">¡Cómpralo ya!</a>
+    </div>
+
+    <div class="ad-container ad-right" id="ad-right">
+        <img src="" alt="Anuncio" id="thumbnailR">
+        <a id="CargandoR">Cargando anuncio...</a>
+        <p id="titleR">Cargando título</p>
+        <a id="linkR" href="purchase.html">¡Cómpralo ya!</a>
+    </div>
+
+    <script src="ads.js"></script>
+    <div id="Actual" class="section">
+        <h2>Estadísticas de La Liga 2024</h2>
+
+        <h3>Estamos en proceso</h3>
+        <table id="standings-table-2024" border="1">
+            <tr><th>Pos</th><th>Equipo</th><th>Puntos</th><th>GF</th><th>GC</th></tr>
+        </table>
+    </div>
+
+    <div id="2021" class="section">
+        <h2>Estadísticas de La Liga 2021</h2>
 
         <h3>Clasificación</h3>
-        <p><strong>Posición:</strong> <span id="team-position">Cargando...</span></p>
-        <p><strong>Puntos:</strong> <span id="team-points">Cargando...</span></p>
-        <p><strong>Goles a Favor:</strong> <span id="team-goals-for">Cargando...</span></p>
-        <p><strong>Goles en Contra:</strong> <span id="team-goals-against">Cargando...</span></p>
+        <table id="standings-table" border="1">
+            <tr><th>Pos</th><th>Equipo</th><th>Puntos</th><th>GF</th><th>GC</th></tr>
+        </table>
+
     </div>
+
+    <footer>
+        <p>© 2025 Andrés Sánchez de Ágreda 3ºA GITT</p>
+    </footer>
 
     <script src="stats.js"></script>
 </body>
