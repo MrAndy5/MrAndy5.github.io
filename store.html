@@ -51,32 +51,37 @@
             <button class="dropbtn">Estadísticas</button>
             <div class="dropdown-content">
                 <a href="stats.html#Actual">Temporada Actual</a>
-                <a href="stats.html#2021">Anteriores</a>
+                <a href="stats.html#2021">2021</a>
+                <a href="stats.html#2022">2022</a>
+                <a href="stats.html#2023">2023</a>
             </div>
         </div>
         <div class="dropdown">
             <button class="dropbtn">Tienda</button>
             <div class="dropdown-content">
-                <a href="#tienda">Articulos relacionados</a>
+                <a href="#tienda">Artículos relacionados</a>
             </div>
-
         </div>
     </div>
+
     <div class="title-container">
         <h1>Tienda</h1>
         <h2>Productos de Sponsor</h2>
     </div>
 
     <div id="tienda" class="section">
-        <h1>!Estamos en proceso!</h1>
+        <h2>Filtrar por precio</h2>
+        <span>0</span>
+        <input type="range" id="priceFilter" min="0" max="2500" step="10">
+        <span id="priceValue">2500</span>
+        
+        <div id="productsContainer" class="products-grid"></div>
     </div>
 
-    <script src="store.js"></script>
+    <script src="scripts.js"></script>
 
     <footer>
         <p>© 2025 Andrés Sánchez de Ágreda 3ºA GITT</p>
     </footer>
-    
 </body>
-
 </html>
