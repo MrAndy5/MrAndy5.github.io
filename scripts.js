@@ -69,18 +69,6 @@ function anuncioIzq() {
     document.getElementById("CargandoL").style.display = "none";
 }
 
-async function anuncio() {
-    try {
-        const response = await fetch("https://dummyjson.com/products/" + randomnumber());
-        const data = await response.json();
-        document.getElementById("thumbnail").src = data.thumbnail;
-        document.getElementById("title").textContent = data.title;
-        document.getElementById("link").href = "product.html?id=" + data.id;
-    } catch (error) {
-        console.error("Error al obtener los datos del producto:", error);
-    }
-}
-
 function anuncioDer() {
     fetch("https://dummyjson.com/products/" + randomnumber())
         .then(response => response.json())
