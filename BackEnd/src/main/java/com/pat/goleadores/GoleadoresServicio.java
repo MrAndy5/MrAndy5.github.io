@@ -1,5 +1,7 @@
 package com.pat.goleadores;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +20,7 @@ public class GoleadoresServicio {
         return goleadoresRepositorio.findById(id).get();
     }
 
-    public GoleadoresModel leerGoleadores(){
+    public List<GoleadoresModel> leerGoleadores(){
         return goleadoresRepositorio.findAll().get(0);
     }
 
