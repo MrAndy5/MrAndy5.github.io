@@ -10,13 +10,16 @@
    - He programado desde cero la APIrest que permite conocer los     goleadores del equipo.
    - Cada goleador tiene un nombre, posición y goles
    - Las operaciones que se pueden realizar son:
-   | Método | Endpoint                    | Descripción                         | Body requerido |
-|--------|-----------------------------|-------------------------------------|----------------|
-| `POST` | `/api/goleadores`           | Crear un nuevo goleador             | ✅              |
-| `GET`  | `/api/goleadores`           | Obtener todos los goleadores        | ❌              |
-| `GET`  | `/api/goleadores/{id}`      | Obtener un goleador por ID          | ❌              |
-| `PUT`  | `/api/goleadores/{id}`      | Actualizar un goleador existente    | ✅              |
-| `DELETE` | `/api/goleadores/{id}`    | Eliminar un goleador por ID         | ❌              |
+   - ## 🧪 Endpoints disponibles
+
+| Método   | Endpoint                | Descripción                      | Body requerido |
+|----------|-------------------------|----------------------------------|----------------|
+| `POST`   | `/api/goleadores`       | Crear un nuevo goleador          | ✅ Sí           |
+| `GET`    | `/api/goleadores`       | Obtener todos los goleadores     | ❌ No           |
+| `GET`    | `/api/goleadores/{id}`  | Obtener un goleador por ID       | ❌ No           |
+| `PUT`    | `/api/goleadores/{id}`  | Actualizar un goleador existente | ✅ Sí           |
+| `DELETE` | `/api/goleadores/{id}`  | Eliminar un goleador por ID      | ❌ No           |
+
 
 2. **Implementación**
    - Para introducir goleadores se utiliza postman
