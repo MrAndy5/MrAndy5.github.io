@@ -6,11 +6,17 @@
 
 ###Cambios introducidos:
 
-1. **Implementación de API REST**
-   - Implementación de anuncios
-   - Implementación de tienda con filtrado por precio
-   - Implementación de estadísticas de las temporadas de 2021 a 2023
-     (Los anuncios y la tiendafueron realizados usando la API ![https://dummyjson.com/docs/products](https://dummyjson.com/docs/products), las estadísticas de la api ![https://www.api-football.com/documentation-v3](https://www.api-football.com/documentation-v3))
+1. **Creación APIres Goleadores**
+   - He programado desde cero la APIrest que permite conocer los     goleadores del equipo.
+   - Cada goleador tiene un nombre, posición y goles
+   - Las operaciones que se pueden realizar son:
+   | Método | Endpoint                    | Descripción                         | Body requerido |
+|--------|-----------------------------|-------------------------------------|----------------|
+| `POST` | `/api/goleadores`           | Crear un nuevo goleador             | ✅              |
+| `GET`  | `/api/goleadores`           | Obtener todos los goleadores        | ❌              |
+| `GET`  | `/api/goleadores/{id}`      | Obtener un goleador por ID          | ❌              |
+| `PUT`  | `/api/goleadores/{id}`      | Actualizar un goleador existente    | ✅              |
+| `DELETE` | `/api/goleadores/{id}`    | Eliminar un goleador por ID         | ❌              |
 
 2. **Optimización CSS**
    - Ya no hay CSS por separado para cada página, además se ha optimizado el ancho de las secciones para hacer más visibles los anuncios
