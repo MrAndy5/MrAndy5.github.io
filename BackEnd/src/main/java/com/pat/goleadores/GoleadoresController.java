@@ -22,6 +22,12 @@ public class GoleadoresController {
         return goleadoresService.crearGoleador(Goleador);
     }
 
+    @PostMapping("/lote")
+    public List<GoleadoresModel> crearGoleadores(@RequestBody List<GoleadoresModel> goleadores) {
+        return goleadoresService.crearGoleadores(goleadores);
+    }
+
+
     @GetMapping
     public List<GoleadoresModel> leerGoleadores(){
         return goleadoresService.leerGoleadores();

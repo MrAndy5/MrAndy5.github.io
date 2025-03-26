@@ -15,13 +15,18 @@ public class GoleadoresServicio {
         return goleadoresRepositorio.save(goleador);
     }
 
+    public List<GoleadoresModel> crearGoleadores(List<GoleadoresModel> goleadores) {
+        return goleadoresRepositorio.saveAll(goleadores);
+    }
+
+
     //Leer
     public GoleadoresModel leerGoleador(Long id){
         return goleadoresRepositorio.findById(id).get();
     }
 
     public List<GoleadoresModel> leerGoleadores(){
-        return goleadoresRepositorio.findAll().get(0);
+        return goleadoresRepositorio.findAll();
     }
 
     //Actualizar

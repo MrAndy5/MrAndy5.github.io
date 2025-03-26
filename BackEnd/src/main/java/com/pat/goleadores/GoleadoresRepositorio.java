@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface GoleadoresRepositorio extends JpaRepository<GoleadoresModel, Long> {
     GoleadoresModel findByNombre(String nombre);
-    GoleadoresModel findByPoscicion(String poscicion);
+    GoleadoresModel findByPosicion(String poscicion);
     GoleadoresModel findByGoles(int goles);
 
 }
