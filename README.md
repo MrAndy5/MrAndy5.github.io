@@ -46,6 +46,7 @@ El body deberá contener el siguiente texto:
    - Se ha implementado la API en la página web de prácticas anteriores, dentro de la página estádisticas bajo el título de goleadores Temporada 24/25
 
 4. **Resultado**
+   
 -![Tabla de goleadores](./images/TablaGol.PNG)
 
 
