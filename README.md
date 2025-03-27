@@ -22,8 +22,9 @@
 
 Para comprobar la implementación se deberá realizar un POST cada vez que se inicie la aplicación, usando postman se hará un post al: http://localhost:8081/api/goleadores/lote
 El body deberá contener el siguiente texto:
-[
-  { "nombre": "Julián Álvarez", "goles": 11, "posicion": "Delantero" },
+
+
+[  { "nombre": "Julián Álvarez", "goles": 11, "posicion": "Delantero" },
   { "nombre": "Alexander Sørloth", "goles": 11, "posicion": "Delantero" },
   { "nombre": "Antoine Griezmann", "goles": 8, "posicion": "Delantero" },
   { "nombre": "Rodrigo De Paul", "goles": 3, "posicion": "Centrocampista" },
@@ -33,8 +34,8 @@ El body deberá contener el siguiente texto:
   { "nombre": "Conor Gallagher", "goles": 2, "posicion": "Centrocampista" },
   { "nombre": "Koke", "goles": 1, "posicion": "Centrocampista" },
   { "nombre": "Giuliano Simeone", "goles": 1, "posicion": "Delantero" },
-  { "nombre": "Clément Lenglet", "goles": 1, "posicion": "Defensa" }
-]
+  { "nombre": "Clément Lenglet", "goles": 1, "posicion": "Defensa" }]
+
 
 2. **Implementación**
    - Para introducir goleadores se utiliza postman
