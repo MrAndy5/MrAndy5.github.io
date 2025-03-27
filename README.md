@@ -15,6 +15,7 @@
 | Método   | Endpoint                | Descripción                      | Body requerido |
 |----------|-------------------------|----------------------------------|----------------|
 | `POST`   | `/api/goleadores`       | Crear un nuevo goleador          | ✅ Sí           |
+| `POST`   | `/api/goleadores/lote`  | Añade un lote de goleadores      | ✅ Sí           |
 | `GET`    | `/api/goleadores`       | Obtener todos los goleadores     | ❌ No           |
 | `GET`    | `/api/goleadores/{id}`  | Obtener un goleador por ID       | ❌ No           |
 | `PUT`    | `/api/goleadores/{id}`  | Actualizar un goleador existente | ✅ Sí           |
@@ -43,6 +44,8 @@ El body deberá contener el siguiente texto:
 
 3. **Despliegue Web**
    - Se ha implementado la API en la página web de prácticas anteriores, dentro de la página estádisticas bajo el título de goleadores Temporada 24/25
-    
+
+4. **Resultado**
+-![Tabla de goleadores](./images/TablaGol.png)
 
 
