@@ -142,8 +142,33 @@ async function fetchLaLigaStats(season, tableId) {
     }
 }
 
+async function cargarGoleadores() {
+    try {
+        const response = await fetch('http://localhost:8081/api/goleadores');
+        if (!response.ok) throw new Error('Error al cargar goleadores');
+
+        const goleadores = await response.json();
+        const tabla = document.getElementById("tabla-goleadores");
+
+        goleadores.forEach(goleador => {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${goleador.nombre}</td>
+                <td>${goleador.goles}</td>
+                <td>${goleador.posicion}</td>
+            `;
+            tabla.appendChild(row);
+        });
+
+    } catch (error) {
+        console.error("Error al obtener los goleadores:", error);
+    }
+}
+
+
 window.onload = function () {
     fetchLaLigaStats(2021, 'standings-table-2021');
     fetchLaLigaStats(2022, 'standings-table-2022');
     fetchLaLigaStats(2023, 'standings-table-2023');
+    cargarGoleadores();
 };
